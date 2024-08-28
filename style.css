@@ -1,0 +1,155 @@
+/* Reset some basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Color theme styling */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: #F5F5F5;
+    color: #333333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #00796B;
+    color: #FFFFFF;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #FFFFFF;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #004D40;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00251A;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+    background-color: #FFFFFF;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section#projects {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 45%;
+    background-color: #E8F5E9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    color: #00796B;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #666666;
+}
+
+a.btn-buy {
+    display: inline-block;
+    background-color: #007BFF; /* Blue color */
+    color: #FFFFFF;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+a.btn-buy:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #333333;
+    background-color: #E8F5E9;
+    padding: 1rem;
+    margin: 2rem auto;
+    max-width: 600px;
+    border-left: 4px solid #00796B;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #00796B;
+    color: #FFFFFF;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+    color: white;
+}
+
+/* Dark theme styling */
+.dark-theme {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+.dark-theme header, .dark-theme footer {
+    background-color: #444444;
+}
+
+.dark-theme .project {
+    background-color: #555555;
+}
+
+.dark-theme blockquote {
+    background-color: #444444;
+}
+
+.dark-theme a.btn-buy {
+    background-color: #1E88E5; /* Blue color for dark theme */
+}
+
+.dark-theme a.btn-buy:hover {
+    background-color: #0D47A1; /* Darker blue on hover */
+}
